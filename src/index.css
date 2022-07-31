@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Century Gothic';
+  src: local('Century Gothic'), url('./assets/fonts/CenturyGothic.ttf') format('ttf');
+  font-weight: normal, bold;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: hsla(0, 100%, 71%, 0.8);
+  --text-color: hsla(0, 0%, 20%, 0.8);
+  --width: 1050px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Century Gothic';
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: var(--width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.navbar-links {
+  text-transform: lowercase;
+  font-weight: bold;
+}
+.navbar-links a {
+  color: var(--text-color);
+  margin-left: 1rem;
+  font-size: 20px;
+}
+.navbar-links a:hover {
+  color: var(--primary-color);
+}
+
+footer {
+  width: var(--width);
+  margin: 0 auto;
+  
+}
+p.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signature svg {
+  width: 100px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 5px;
 }
