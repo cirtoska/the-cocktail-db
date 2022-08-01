@@ -5,7 +5,9 @@ import Logo from "./Logo";
 const Header = () => {
   return (
     <header>
-      <Logo />
+      <Link to="/">
+        <Logo />
+      </Link>
       <nav className="navbar-links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>

@@ -12,8 +12,8 @@ const Signature = () => {
         <text
           transform="translate(160 64)"
           fill="rgba(75,75,75,0.8)"
-          font-size="80"
-          font-family="Allura-Regular, Allura"
+          fontSize="80"
+          fontFamily="Allura-Regular, Allura"
         >
           <tspan x="-160" y="0">
             SashkaChi.

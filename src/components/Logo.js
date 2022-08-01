@@ -13,8 +13,8 @@ const Logo = () => {
           <text
             transform="translate(588 73)"
             fill="rgba(255,107,107,0.8)"
-            font-size="40"
-            font-family="ForteMT, Forte"
+            fontSize="40"
+            fontFamily="ForteMT, Forte"
           >
             <tspan x="-127.559" y="0">
               TheCocktailDB
