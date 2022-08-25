@@ -4,18 +4,19 @@
   font-weight: normal, bold;
   font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 :root {
   --primary-color: hsla(0, 100%, 71%, 0.8);
   --text-color: hsla(0, 0%, 20%, 0.8);
+  --dark-text-color: hsla(0, 0%, 20%, 1);
   --width: 1050px;
 }
 
 body {
-  margin: 0;
+  padding: 0 2rem;
   font-family: 'Century Gothic';
-  
+  color: var(--dark-text-color);
 }
 main {
   min-height: 69vh;
@@ -37,12 +38,20 @@ header {
   width: var(--width);
   margin: 0 auto;
   padding: 1rem;
+  max-width: 100%;
 }
-
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  };
+  }
 .navbar-links {
   text-transform: lowercase;
   font-weight: bold;
   letter-spacing: 1px;
+  padding: 10px;
 }
 .navbar-links a {
   color: var(--text-color);
@@ -72,12 +81,14 @@ header {
 /* Search */
 #search-cocktails {
   margin: 2rem auto;
-  width: 930px;
+  /* width: 930px; */
   padding: 1rem 3rem 3rem 3rem;
+  max-width: 100%;
 }
 
 input[type=search] {
   width: 100%;
+  max-width: 100%;
   padding: 1rem;
   border: hsla(204, 100%, 69%, 60%) 2px solid;
   border-radius: 50px;
@@ -101,11 +112,13 @@ input[type=search]::placeholder {
 #cocktalil-list {
   width: var(--width);
   margin: 0 auto;
+  max-width: 100%;
 }
 .cocktails {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 2rem;
+  max-width: 100%;
 }
 
 .cocktail-card img {
@@ -140,6 +153,22 @@ input[type=search]::placeholder {
   letter-spacing: 1px;
 }
 
+@media (max-width: 990px) {
+  .text-wrap {
+    border-radius: 0 0 85px 85px;
+  }
+}
+@media (max-width: 760px) {
+  .text-wrap {
+    border-radius: 0 0 100px 100px;
+  }
+}
+@media (max-width: 520px) {
+  .text-wrap {
+    border-radius: 0 0 170px 170px;
+  }
+}
+
 .cocktail-card:hover, .cocktail-card:hover .text-wrap {
   opacity: 1;
   transition: all 0.5s ease-in-out;
@@ -147,12 +176,14 @@ input[type=search]::placeholder {
 
 /* Single Cocktail */
 .title {
-  font-family: 'Anybody', cursive;
+  font-family: 'Playfair Display', serif;
   margin: 3rem 0;
   font-size: 2.5rem;
+  
 }
 main.post {
   width: var(--width);
+  max-width: 100%;
   margin: 3rem auto;
   text-align: center;
   min-height: 69vh;
@@ -173,7 +204,11 @@ a.btn {
   gap: 2rem;
   align-items: center;
 }
-
+@media (max-width: 800px) {
+  .cocktail {
+    grid-template-columns: 1fr;
+  }
+}
 img.cocktail-image {
   border-radius: 50px;
   border: 5px solid white;
@@ -201,7 +236,18 @@ img.cocktail-image {
   gap: 2rem;
   align-items: top;
 }
-
+@media (max-width: 500px) {
+  .category {
+    display: block;
+    margin: auto;
+  }
+  .cocktail-info p {
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+}
 .text {
   word-break: break-word;
 }
@@ -209,8 +255,9 @@ img.cocktail-image {
 /* Footer */
 footer {
   width: var(--width);
-  margin: 0 auto;
-  
+  margin: 1rem auto 0;
+  max-width: 100%;
+  padding-top: 1rem;
 }
 p.copy {
   display: flex;
@@ -225,3 +272,14 @@ p.copy {
   margin-left: 5px;
 }
 
+@media (max-width: 450px) {
+  #search-cocktails {
+    padding: 1rem;
+  }
+  p.copy {
+    flex-direction: column;
+  };
+  .signature {
+    margin-top: 0;
+  }
+}
