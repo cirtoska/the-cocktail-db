@@ -1,3 +1,8 @@
+# The Cocktail DB
+## UX Design by me and Web development by me
+### Live Preview https://the-cocktail-446zmrwyn-cirtoska.vercel.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
