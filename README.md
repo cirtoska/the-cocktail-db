@@ -1,5 +1,5 @@
 # The Cocktail DB
-## UX Design by me and Web development by me
+## UI/UX Design by me and Web development by me
 ### Live Preview https://the-cocktail-446zmrwyn-cirtoska.vercel.app/
 
 
