@@ -2,6 +2,8 @@
 ## UI/UX Design by me and Web development by me
 ### Live Preview https://the-cocktail-446zmrwyn-cirtoska.vercel.app/
 
+For this project the idea was to create a search cocktail database. First I've designed the app in Adobe XD and then I've developed the code in React using API from thecocktaildb.com
+
 
 # Getting Started with Create React App
 
